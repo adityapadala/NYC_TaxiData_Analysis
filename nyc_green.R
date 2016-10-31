@@ -10,10 +10,9 @@ ifelse("ggmap" %in% rownames(installed.packages()),library("ggmap"), install.pac
 #install.packages("h2o", repos=(c("http://s3.amazonaws.com/h2o-release/h2o/master/1555/R", getOption("repos"))))
 library(h2o)
 
-setwd('D:/Aditya/Study/CapitalOne/job')
 
 #Programmatically download and load into your favorite analytical tool the trip data for September 2015.
-setwd('C:/Users/gvykr/Desktop/New folder')
+setwd('path')
 ptm <- proc.time()
 green <- read.csv("https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2015-09.csv")
 proc.time() - ptm
